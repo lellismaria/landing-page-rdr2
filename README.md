@@ -1,4 +1,4 @@
-<h1 align="center"> ✍️ Jogo da Forca - Challenge ONE Sprint 02 </h1>
+<h1 align="center"> 🌐 Jogo da Forca - Challenge ONE Sprint 02 </h1>
 
 <p align="center">
 	<img src="https://i.imgur.com/cj4attf.png" alt="rdr-2" title="Red Dead Redemption 2"> </p>
