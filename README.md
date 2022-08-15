@@ -21,7 +21,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 ## 🖥️ Demonstração
 
-- Você pode acessar o projeto clicando <a href="https://hang-man-games.vercel.app/">aqui</a>.
+- Você pode acessar o projeto clicando <a href="https://landing-page-rdr2.vercel.app/">aqui</a>.
 
 ---
 
