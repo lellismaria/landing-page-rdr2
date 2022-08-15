@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif;
+    height: 100vh;
+    background-image: linear-gradient(90deg, #000000, #000D 35%, #000000),  url(../assets/rdr.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 128px 50px 128px;
+    animation: zoom 1.5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-burger-container{
+    position: absolute;
+    display: none;
+    align-items: center;
+    top: 30px;
+    right: 30px;
+    height: 36px;
+    width: 36px;
+    z-index: 2;
+}
+.menu-burger,
+.menu-burger::before,
+.menu-burger::after{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: #FFFFFF;
+    height: 4px;
+    width: 36px;
+    border-radius: 5px;
+    transition: all  1s;
+}
+.menu-burger::before{
+    transform: translateY(-12px);
+}
+.menu-burger::after{
+    transform: translateY(12px);
+}
+
+.menu-burger-container.active .menu-burger{
+    background-color: transparent;
+}
+
+.menu-burger-container.active .menu-burger::before{
+    transform: rotate(45deg);
+}
+
+.menu-burger-container.active .menu-burger::after{
+    transform: rotate(-45deg);
+}
+
+img {
+    width: 200px;
+    }
+
+.link-container{
+    display: flex;
+    gap: 32px;
+}
+
+.link-container a {
+    text-shadow: 2px 2px 2px #000000;
+    padding: 6px;
+    transition: all 1s;
+}
+
+.link-container a:hover {
+    background-color: #e62721;
+    border-radius: 7px;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+}
+
+.content-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+.content-container h1 {
+    font-size: 7rem;
+    font-weight: 200;
+    flex-direction: column;
+    color: #e62721;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.game-title {
+    font-size: 2.6rem;
+    font-style: italic;
+    transform: translateY(-20px);
+}
+
+.game-text {
+    font-size: 1.1rem;
+    font-weight: 100;
+    width: 750px;
+    margin-bottom: 30px;
+}
+
+.button {
+    height: 80px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 1.5rem ;
+    font-weight: 200;
+    border-radius: 10px;
+    background-color: #E62721;
+    gap: 12px;
+}
+
+.social-container {
+    width: 48px;
+}
+
+.social-container ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-container li {
+    height: 48px;
+    width: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #FFFFFF;
+    transition: all 1s;
+}
+
+.social-container i {
+    font-size: 1.5rem;
+}
+
+.social-container li:hover {
+    background-color: #E62721;
+    border-color: #E62721;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: #FFFFFF;
+}
